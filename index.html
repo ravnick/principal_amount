@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>दैनिक ब्याज कैलकुलेटर</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>📅 दिन के हिसाब से ब्याज कैलकुलेटर</h2>
+
+        <label>Principal Amount (₹)</label>
+        <input type="number" id="principal" placeholder="Enter Principal Amount">
+
+        <label>Monthly Interest Rate (%)</label>
+        <input type="number" id="monthlyRate" placeholder="Enter Interest Rate">
+
+        <label>Start Date</label>
+        <input type="date" id="startDate">
+
+        <label>End Date</label>
+        <input type="date" id="endDate">
+
+        <button onclick="calculate()">Calculate</button>
+
+        <div class="result" id="result" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
